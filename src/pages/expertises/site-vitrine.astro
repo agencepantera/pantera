@@ -1,0 +1,177 @@
+---
+import ExpertiseLayout from '../../layouts/ExpertiseLayout.astro';
+import { Image } from 'astro:assets';
+
+const title = "Création de Site Vitrine | Expert Web Wattrelos & Métropole Lilloise";
+const description = "Expert en création de site vitrine sur Wattrelos, Lille et la MEL. Design moderne, responsive et optimisé SEO. Devis gratuit pour votre projet de site web vitrine ✓ 100% sur-mesure ✓ Support local";
+
+const tableOfContents = [
+  { id: "presentation", title: "Création de Site Vitrine" },
+  { id: "avantages", title: "Avantages d'un Site Vitrine" },
+  { id: "fonctionnalites", title: "Fonctionnalités Essentielles" },
+  { id: "methodologie", title: "Notre Méthodologie" },
+  { id: "technologies", title: "Technologies Utilisées" },
+  { id: "faq", title: "Questions Fréquentes" }
+];
+---
+
+<ExpertiseLayout
+  title={title}
+  description={description}
+  heroTitle="Création de Site Vitrine sur la Métropole Lilloise"
+  heroSubtitle="Votre partenaire digital local pour une présence web impactante"
+  heroImage="/images/creation-site-vitrine-lille.webp"
+  tableOfContents={tableOfContents}
+>
+  <section id="presentation">
+    <h2>Création de Site Vitrine sur la Métropole Lilloise</h2>
+    <p>
+      Basée à Wattrelos, Pantera Agency accompagne les entreprises de la métropole lilloise dans la création de sites vitrines professionnels. Notre expertise locale nous permet de comprendre les spécificités du marché régional et d'adapter votre site aux attentes de votre clientèle.
+    </p>
+    <div class="my-8">
+      <Image
+        src="/images/site-web-agence-pantera.webp"
+        alt="Création de site vitrine professionnel"
+        width={800}
+        height={400}
+        class="rounded-lg shadow-lg"
+      />
+    </div>
+  </section>
+
+  <section id="avantages" class="mt-12">
+    <h2>Avantages d'un Site Vitrine Local</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow">
+        <h3 class="text-xl font-semibold mb-4">Visibilité Locale</h3>
+        <ul>
+          <li>Référencement optimisé pour la MEL</li>
+          <li>Présence renforcée sur Lille et environs</li>
+          <li>Ciblage géographique précis</li>
+          <li>Adaptation aux spécificités locales</li>
+        </ul>
+      </div>
+      <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow">
+        <h3 class="text-xl font-semibold mb-4">Performance</h3>
+        <ul>
+          <li>Design moderne et responsive</li>
+          <li>Temps de chargement optimisé</li>
+          <li>Interface intuitive</li>
+          <li>Conversion optimisée</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="fonctionnalites" class="mt-12">
+    <h2>Fonctionnalités Essentielles</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow">
+        <h3 class="text-xl font-semibold mb-4">Design</h3>
+        <ul>
+          <li>Responsive design</li>
+          <li>Interface moderne</li>
+          <li>Identité visuelle</li>
+          <li>UX optimisée</li>
+        </ul>
+      </div>
+      <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow">
+        <h3 class="text-xl font-semibold mb-4">Contenu</h3>
+        <ul>
+          <li>Pages optimisées SEO</li>
+          <li>Blog intégré</li>
+          <li>Médias optimisés</li>
+          <li>Contenu local</li>
+        </ul>
+      </div>
+      <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow">
+        <h3 class="text-xl font-semibold mb-4">Interaction</h3>
+        <ul>
+          <li>Formulaire de contact</li>
+          <li>Intégration réseaux sociaux</li>
+          <li>Call-to-action optimisés</li>
+          <li>Témoignages clients</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="methodologie" class="mt-12">
+    <h2>Notre Méthodologie</h2>
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+      <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow text-center">
+        <div class="text-4xl font-bold text-primary-600 mb-4">1</div>
+        <h3 class="text-xl font-semibold mb-2">Analyse</h3>
+        <p class="text-sm">Étude de vos besoins</p>
+      </div>
+      <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow text-center">
+        <div class="text-4xl font-bold text-primary-600 mb-4">2</div>
+        <h3 class="text-xl font-semibold mb-2">Design</h3>
+        <p class="text-sm">Maquettes & UX</p>
+      </div>
+      <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow text-center">
+        <div class="text-4xl font-bold text-primary-600 mb-4">3</div>
+        <h3 class="text-xl font-semibold mb-2">Développement</h3>
+        <p class="text-sm">Intégration</p>
+      </div>
+      <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow text-center">
+        <div class="text-4xl font-bold text-primary-600 mb-4">4</div>
+        <h3 class="text-xl font-semibold mb-2">Lancement</h3>
+        <p class="text-sm">Mise en ligne</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="technologies" class="mt-12">
+    <h2>Technologies Utilisées</h2>
+    <div class="bg-white dark:bg-gray-900 p-8 rounded-lg shadow-lg">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div>
+          <h3 class="text-xl font-semibold mb-4">Front-end</h3>
+          <ul>
+            <li>HTML5 sémantique</li>
+            <li>CSS3 / SASS</li>
+            <li>JavaScript moderne</li>
+            <li>Frameworks performants</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold mb-4">Performance</h3>
+          <ul>
+            <li>Optimisation images</li>
+            <li>Cache avancé</li>
+            <li>Compression</li>
+            <li>CDN rapide</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="mt-12">
+    <h2>Questions Fréquentes</h2>
+    <div class="space-y-6">
+      <div>
+        <h3 class="text-xl font-semibold mb-2">Quel est le délai de création ?</h3>
+        <p>Le délai moyen est de 4 à 8 semaines selon la complexité du projet et vos besoins spécifiques.</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold mb-2">Le site sera-t-il référencé localement ?</h3>
+        <p>Oui, nous optimisons votre site pour un référencement local sur Wattrelos, Lille et toute la métropole lilloise.</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold mb-2">Proposez-vous un accompagnement ?</h3>
+        <p>Oui, nous assurons un suivi personnalisé et une maintenance régulière de votre site.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="mt-12 text-center">
+    <a
+      href="#contact"
+      class="inline-flex items-center px-8 py-4 border border-transparent text-lg font-medium rounded-md text-white bg-primary-700 hover:bg-primary-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-600 transition-colors duration-300"
+    >
+      Démarrer votre projet
+    </a>
+  </div>
+</ExpertiseLayout>

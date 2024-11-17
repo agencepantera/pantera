@@ -1,0 +1,224 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import TableOfContents from '../../components/TableOfContents.astro';
+import { Image } from 'astro:assets';
+
+const title = "Audit SEO Professionnel | Analyse Technique & Marketing | Pantera Agency";
+const description = "Audit SEO complet pour votre site web ✓ Analyse technique approfondie ✓ Recommandations personnalisées ✓ Stratégie d'amélioration ✓ Expertise SEO reconnue";
+
+const tableOfContents = [
+  { id: "presentation", title: "Audit SEO Professionnel" },
+  { id: "analyse-technique", title: "Analyse Technique" },
+  { id: "analyse-contenu", title: "Analyse du Contenu" },
+  { id: "analyse-backlinks", title: "Analyse des Backlinks" },
+  { id: "methodologie", title: "Notre Méthodologie" },
+  { id: "livrables", title: "Livrables" },
+  { id: "faq", title: "Questions Fréquentes" }
+];
+---
+
+<Layout title={title} description={description}>
+  <div class="pt-20">
+    <section class="relative h-[400px] flex items-center justify-center overflow-hidden">
+      <div class="absolute inset-0 z-0">
+        <Image
+          src="/images/audit-seo-lille.webp"
+          alt="Audit SEO professionnel"
+          width={1920}
+          height={400}
+          class="object-cover w-full h-full"
+        />
+        <div class="absolute inset-0 bg-black/50"></div>
+      </div>
+      
+      <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h1 class="text-4xl font-extrabold text-white sm:text-5xl">
+          Audit SEO Professionnel
+        </h1>
+        <p class="mt-4 text-xl text-gray-200 max-w-3xl mx-auto">
+          Analysez et optimisez votre référencement naturel
+        </p>
+      </div>
+    </section>
+
+    <section class="py-20 bg-gray-50 dark:bg-gray-800">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
+          <div class="lg:col-span-1">
+            <div class="sticky top-24">
+              <TableOfContents items={tableOfContents} />
+            </div>
+          </div>
+
+          <div class="lg:col-span-3">
+            <div class="prose prose-lg max-w-none dark:prose-invert">
+              <section id="presentation">
+                <h2>Audit SEO Professionnel</h2>
+                <p>
+                  Un audit SEO approfondi est la première étape essentielle pour améliorer votre visibilité sur les moteurs de recherche. Notre expertise vous permet d'identifier les points forts et les axes d'amélioration de votre site web.
+                </p>
+                <div class="my-8">
+                  <Image
+                    src="/images/seo-audit-agence-pantera-wattrelos.webp"
+                    alt="Vue d'ensemble de notre audit SEO"
+                    width={800}
+                    height={400}
+                    class="rounded-lg shadow-lg"
+                  />
+                </div>
+              </section>
+
+              <section id="analyse-technique" class="mt-12">
+                <h2>Analyse Technique</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow">
+                    <h3 class="text-xl font-semibold mb-4">Performance Technique</h3>
+                    <ul>
+                      <li>Vitesse de chargement</li>
+                      <li>Core Web Vitals</li>
+                      <li>Structure du site</li>
+                      <li>Optimisation mobile</li>
+                      <li>Sécurité HTTPS</li>
+                    </ul>
+                  </div>
+                  <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow">
+                    <h3 class="text-xl font-semibold mb-4">Crawl & Indexation</h3>
+                    <ul>
+                      <li>Analyse robots.txt</li>
+                      <li>Sitemap XML</li>
+                      <li>Pages orphelines</li>
+                      <li>Redirections</li>
+                      <li>Erreurs 404</li>
+                    </ul>
+                  </div>
+                </div>
+              </section>
+
+              <section id="analyse-contenu" class="mt-12">
+                <h2>Analyse du Contenu</h2>
+                <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow">
+                  <h3 class="text-xl font-semibold mb-4">Éléments Analysés</h3>
+                  <ul class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <li>✓ Structure des balises H1-H6</li>
+                    <li>✓ Optimisation des méta-descriptions</li>
+                    <li>✓ Qualité du contenu</li>
+                    <li>✓ Mots-clés ciblés</li>
+                    <li>✓ Balises title</li>
+                    <li>✓ Images et attributs alt</li>
+                    <li>✓ Contenu dupliqué</li>
+                    <li>✓ Structure des URLs</li>
+                  </ul>
+                </div>
+              </section>
+
+              <section id="analyse-backlinks" class="mt-12">
+                <h2>Analyse des Backlinks</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow">
+                    <h3 class="text-xl font-semibold mb-4">Profil de Liens</h3>
+                    <ul>
+                      <li>Qualité des backlinks</li>
+                      <li>Diversité des sources</li>
+                      <li>Textes d'ancrage</li>
+                      <li>Liens toxiques</li>
+                    </ul>
+                  </div>
+                  <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow">
+                    <h3 class="text-xl font-semibold mb-4">Opportunités</h3>
+                    <ul>
+                      <li>Analyse concurrentielle</li>
+                      <li>Opportunités de liens</li>
+                      <li>Stratégie de netlinking</li>
+                      <li>Recommandations</li>
+                    </ul>
+                  </div>
+                </div>
+              </section>
+
+              <section id="methodologie" class="mt-12">
+                <h2>Notre Méthodologie</h2>
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                  <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow text-center">
+                    <div class="text-4xl font-bold text-primary-600 mb-4">1</div>
+                    <h3 class="text-xl font-semibold mb-2">Collecte</h3>
+                    <p class="text-sm">Collecte des données et accès analytics</p>
+                  </div>
+                  <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow text-center">
+                    <div class="text-4xl font-bold text-primary-600 mb-4">2</div>
+                    <h3 class="text-xl font-semibold mb-2">Analyse</h3>
+                    <p class="text-sm">Analyse approfondie multi-critères</p>
+                  </div>
+                  <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow text-center">
+                    <div class="text-4xl font-bold text-primary-600 mb-4">3</div>
+                    <h3 class="text-xl font-semibold mb-2">Rapport</h3>
+                    <p class="text-sm">Rapport détaillé et recommandations</p>
+                  </div>
+                  <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow text-center">
+                    <div class="text-4xl font-bold text-primary-600 mb-4">4</div>
+                    <h3 class="text-xl font-semibold mb-2">Plan d'action</h3>
+                    <p class="text-sm">Stratégie d'optimisation détaillée</p>
+                  </div>
+                </div>
+              </section>
+
+              <section id="livrables" class="mt-12">
+                <h2>Livrables</h2>
+                <div class="bg-white dark:bg-gray-900 p-8 rounded-lg shadow-lg">
+                  <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                      <h3 class="text-xl font-semibold mb-4">Rapport Complet</h3>
+                      <ul>
+                        <li>Analyse technique détaillée</li>
+                        <li>Audit de contenu</li>
+                        <li>Analyse des backlinks</li>
+                        <li>Benchmark concurrentiel</li>
+                        <li>Points forts et axes d'amélioration</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <h3 class="text-xl font-semibold mb-4">Plan d'Action</h3>
+                      <ul>
+                        <li>Recommandations priorisées</li>
+                        <li>Planning d'implémentation</li>
+                        <li>Estimation des ressources</li>
+                        <li>KPIs et objectifs</li>
+                        <li>Support de présentation</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <section id="faq" class="mt-12">
+                <h2>Questions Fréquentes</h2>
+                <div class="space-y-6">
+                  <div>
+                    <h3 class="text-xl font-semibold mb-2">Combien de temps dure un audit SEO ?</h3>
+                    <p>Un audit SEO complet prend généralement entre 1 et 2 semaines selon la taille du site et la complexité du projet.</p>
+                  </div>
+                  <div>
+                    <h3 class="text-xl font-semibold mb-2">Quels accès sont nécessaires ?</h3>
+                    <p>Nous avons besoin d'accès à Google Analytics, Search Console et au back-office de votre site pour une analyse complète.</p>
+                  </div>
+                  <div>
+                    <h3 class="text-xl font-semibold mb-2">L'audit inclut-il une analyse de la concurrence ?</h3>
+                    <p>Oui, nous analysons vos principaux concurrents pour identifier les opportunités et les meilleures pratiques du secteur.</p>
+                  </div>
+                </div>
+              </section>
+
+              <div class="mt-12 text-center">
+                <a
+                  href="#contact"
+                  class="inline-flex items-center px-8 py-4 border border-transparent text-lg font-medium rounded-md text-white bg-primary-600 hover:bg-primary-700 transition-colors duration-300"
+                >
+                  Demander un audit SEO
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</Layout>

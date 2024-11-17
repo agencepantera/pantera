@@ -1,0 +1,19 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Hero from '../components/Hero.astro';
+import Services from '../components/Services.astro';
+import Projects from '../components/Projects.astro';
+import About from '../components/About.astro';
+import Contact from '../components/Contact.astro';
+
+const title = "Agence Web Lille & Métropole Lilloise | Création de Sites Web";
+const description = "Pantera Agency, votre agence web à Wattrelos et sur la métropole lilloise. Experts en création de sites web, référencement et stratégie digitale. Présents à Roubaix, Tourcoing, Villeneuve d'Ascq et toute la MEL.";
+---
+
+<Layout title={title} description={description}>
+  <Hero />
+  <Services />
+  <Projects />
+  <About />
+  <Contact />
+</Layout>

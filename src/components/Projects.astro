@@ -1,0 +1,64 @@
+---
+const projects = [
+  {
+    title: "Site Vitrine Artisan",
+    category: "Site Web",
+    image: "/images/artisan.webp",
+    description: "Site vitrine moderne pour un artisan menuisier, optimisé pour la conversion et le référencement local"
+  },
+  {
+    title: "Landing Page Événement",
+    category: "Marketing Digital",
+    image: "/images/landing.webp",
+    description: "Page d'atterrissage haute performance pour un événement d'entreprise avec +200% de conversions"
+  },
+  {
+    title: "E-commerce Premium",
+    category: "E-commerce",
+    image: "/images/ecommerce.webp",
+    description: "Boutique en ligne sur-mesure avec une augmentation de 150% des ventes en 6 mois"
+  }
+];
+---
+
+<section id="projects" class="py-20">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center">
+      <h2 class="text-3xl font-extrabold text-gray-900 dark:text-white sm:text-4xl">
+        Nos Réalisations
+      </h2>
+      <p class="mt-4 max-w-2xl mx-auto text-xl text-gray-600 dark:text-gray-300">
+        Des projets web sur-mesure qui génèrent des résultats concrets
+      </p>
+    </div>
+
+    <div class="mt-20 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+      {projects.map(project => (
+        <div class="group relative overflow-hidden rounded-lg shadow-lg">
+          <div class="relative h-80 w-full overflow-hidden">
+            <img
+              src={project.image}
+              alt={project.title}
+              class="h-full w-full object-cover object-center transition-transform duration-300 group-hover:scale-110"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+          </div>
+          <div class="absolute bottom-0 left-0 right-0 p-6">
+            <p class="text-sm font-medium text-primary-400">{project.category}</p>
+            <h3 class="mt-2 text-xl font-semibold text-white">{project.title}</h3>
+            <p class="mt-2 text-sm text-gray-300">{project.description}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <div class="mt-12 text-center">
+      <a
+        href="#contact"
+        class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary-600 hover:bg-primary-700 transition-colors duration-300"
+      >
+        Démarrer votre projet
+      </a>
+    </div>
+  </div>
+</section>

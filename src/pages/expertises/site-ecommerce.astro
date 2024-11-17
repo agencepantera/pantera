@@ -1,0 +1,249 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import TableOfContents from '../../components/TableOfContents.astro';
+import { Image } from 'astro:assets';
+
+const title = "Création Site E-commerce Professionnel | Solution sur-mesure | Pantera Agency";
+const description = "Experts en création de site e-commerce ✓ Solutions sur-mesure ✓ Optimisation des conversions ✓ Interface intuitive ✓ Paiement sécurisé ✓ Devis gratuit pour votre boutique en ligne";
+
+const tableOfContents = [
+  { id: "presentation", title: "Création de Site E-commerce" },
+  { id: "fonctionnalites", title: "Fonctionnalités E-commerce" },
+  { id: "solutions", title: "Nos Solutions" },
+  { id: "performance", title: "Performance & Conversion" },
+  { id: "technologies", title: "Technologies E-commerce" },
+  { id: "tarifs", title: "Tarifs E-commerce" },
+  { id: "faq", title: "Questions Fréquentes" }
+];
+---
+
+<Layout title={title} description={description}>
+  <div class="pt-20">
+    <section class="relative h-[400px] flex items-center justify-center overflow-hidden">
+      <div class="absolute inset-0 z-0">
+        <Image
+          src="/images/ecommerce-wattrelos-agence-pantera.webp"
+          alt="Création de site e-commerce professionnel"
+          width={1920}
+          height={400}
+          class="object-cover w-full h-full"
+        />
+        <div class="absolute inset-0 bg-black/50"></div>
+      </div>
+      
+      <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h1 class="text-4xl font-extrabold text-white sm:text-5xl">
+          Solutions E-commerce Professionnelles
+        </h1>
+        <p class="mt-4 text-xl text-gray-200 max-w-3xl mx-auto">
+          Développez votre business en ligne avec une boutique performante
+        </p>
+      </div>
+    </section>
+
+    <section class="py-20 bg-gray-50 dark:bg-gray-800">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
+          <div class="lg:col-span-1">
+            <div class="sticky top-24">
+              <TableOfContents items={tableOfContents} />
+            </div>
+          </div>
+
+          <div class="lg:col-span-3">
+            <div class="prose prose-lg max-w-none dark:prose-invert">
+              <section id="presentation">
+                <h2>Création de Site E-commerce</h2>
+                <p>
+                  Transformez votre activité avec une boutique en ligne performante et professionnelle. Chez Pantera Agency, nous développons des solutions e-commerce sur-mesure qui maximisent vos ventes et optimisent l'expérience d'achat de vos clients.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+                  <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow">
+                    <h3 class="text-xl font-semibold mb-4">Vente en Ligne Optimisée</h3>
+                    <ul>
+                      <li>Tunnel d'achat optimisé</li>
+                      <li>Paiement sécurisé</li>
+                      <li>Gestion des stocks en temps réel</li>
+                    </ul>
+                  </div>
+                  <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow">
+                    <h3 class="text-xl font-semibold mb-4">Marketing E-commerce</h3>
+                    <ul>
+                      <li>Promotions automatisées</li>
+                      <li>Programmes de fidélité</li>
+                      <li>Emails transactionnels</li>
+                    </ul>
+                  </div>
+                </div>
+              </section>
+
+              <section id="fonctionnalites" class="mt-12">
+                <h2>Fonctionnalités E-commerce Essentielles</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                  <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow">
+                    <h3 class="text-xl font-semibold mb-4">Gestion Produits</h3>
+                    <ul>
+                      <li>Catalogue illimité</li>
+                      <li>Variations produits</li>
+                      <li>Import/Export CSV</li>
+                      <li>Gestion des stocks</li>
+                    </ul>
+                  </div>
+                  <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow">
+                    <h3 class="text-xl font-semibold mb-4">Paiement & Commandes</h3>
+                    <ul>
+                      <li>Multi-devises</li>
+                      <li>Paiement sécurisé</li>
+                      <li>Suivi des commandes</li>
+                      <li>Factures automatiques</li>
+                    </ul>
+                  </div>
+                  <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow">
+                    <h3 class="text-xl font-semibold mb-4">Marketing</h3>
+                    <ul>
+                      <li>Codes promo</li>
+                      <li>Cross-selling</li>
+                      <li>Avis clients</li>
+                      <li>Newsletter intégrée</li>
+                    </ul>
+                  </div>
+                </div>
+              </section>
+
+              <section id="solutions" class="mt-12">
+                <h2>Nos Solutions E-commerce</h2>
+                <p>
+                  Nous proposons des solutions adaptées à chaque besoin :
+                </p>
+                <ul>
+                  <li>
+                    <strong>WooCommerce</strong> - Solution open-source flexible et évolutive
+                  </li>
+                  <li>
+                    <strong>Shopify</strong> - Plateforme SaaS complète et performante
+                  </li>
+                  <li>
+                    <strong>PrestaShop</strong> - Solution robuste pour le marché français
+                  </li>
+                  <li>
+                    <strong>Solutions sur-mesure</strong> - Développement spécifique pour besoins complexes
+                  </li>
+                </ul>
+              </section>
+
+              <section id="performance" class="mt-12">
+                <h2>Performance & Conversion</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow">
+                    <h3 class="text-xl font-semibold mb-4">Optimisation Technique</h3>
+                    <ul>
+                      <li>Temps de chargement < 2s</li>
+                      <li>Core Web Vitals optimisés</li>
+                      <li>Cache avancé</li>
+                      <li>CDN mondial</li>
+                    </ul>
+                  </div>
+                  <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow">
+                    <h3 class="text-xl font-semibold mb-4">Conversion</h3>
+                    <ul>
+                      <li>A/B Testing</li>
+                      <li>Tunnel d'achat optimisé</li>
+                      <li>Relance paniers abandonnés</li>
+                      <li>Analytics avancés</li>
+                    </ul>
+                  </div>
+                </div>
+              </section>
+
+              <section id="technologies" class="mt-12">
+                <h2>Technologies E-commerce</h2>
+                <p>
+                  Nous utilisons les meilleures technologies pour votre boutique :
+                </p>
+                <ul>
+                  <li>
+                    <strong>Front-end</strong> - React.js, Vue.js pour une expérience fluide
+                  </li>
+                  <li>
+                    <strong>Back-end</strong> - API REST/GraphQL pour la scalabilité
+                  </li>
+                  <li>
+                    <strong>Base de données</strong> - Solutions optimisées pour l'e-commerce
+                  </li>
+                  <li>
+                    <strong>Sécurité</strong> - SSL, RGPD, PCI DSS
+                  </li>
+                </ul>
+              </section>
+
+              <section id="tarifs" class="mt-12">
+                <h2>Tarifs E-commerce</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                  <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow">
+                    <h3 class="text-xl font-semibold mb-4">Starter</h3>
+                    <p class="text-3xl font-bold text-primary-600 mb-4">À partir de 4 990€</p>
+                    <ul>
+                      <li>✓ Jusqu'à 100 produits</li>
+                      <li>✓ Paiement CB sécurisé</li>
+                      <li>✓ Gestion des stocks</li>
+                      <li>✓ Support 6 mois</li>
+                    </ul>
+                  </div>
+                  <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow border-2 border-primary-500">
+                    <h3 class="text-xl font-semibold mb-4">Business</h3>
+                    <p class="text-3xl font-bold text-primary-600 mb-4">À partir de 9 990€</p>
+                    <ul>
+                      <li>✓ Jusqu'à 1000 produits</li>
+                      <li>✓ Multi-paiement</li>
+                      <li>✓ Marketing automation</li>
+                      <li>✓ Import produits</li>
+                      <li>✓ Support 12 mois</li>
+                    </ul>
+                  </div>
+                  <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow">
+                    <h3 class="text-xl font-semibold mb-4">Enterprise</h3>
+                    <p class="text-3xl font-bold text-primary-600 mb-4">Sur devis</p>
+                    <ul>
+                      <li>✓ Produits illimités</li>
+                      <li>✓ Multi-boutiques</li>
+                      <li>✓ API personnalisée</li>
+                      <li>✓ ERP/CRM intégré</li>
+                      <li>✓ Support premium</li>
+                    </ul>
+                  </div>
+                </div>
+              </section>
+
+              <section id="faq" class="mt-12">
+                <h2>Questions Fréquentes</h2>
+                <div class="space-y-6">
+                  <div>
+                    <h3 class="text-xl font-semibold mb-2">Quel est le délai de mise en ligne ?</h3>
+                    <p>Le délai moyen est de 8 à 12 semaines selon la complexité du projet et les fonctionnalités requises.</p>
+                  </div>
+                  <div>
+                    <h3 class="text-xl font-semibold mb-2">Quels moyens de paiement proposez-vous ?</h3>
+                    <p>Nous intégrons tous les principaux moyens de paiement : CB, PayPal, Apple Pay, virement, etc.</p>
+                  </div>
+                  <div>
+                    <h3 class="text-xl font-semibold mb-2">La boutique sera-t-elle mobile-friendly ?</h3>
+                    <p>Oui, toutes nos boutiques sont 100% responsives et optimisées pour tous les appareils.</p>
+                  </div>
+                </div>
+              </section>
+
+              <div class="mt-12 text-center">
+                <a
+                  href="#contact"
+                  class="inline-flex items-center px-8 py-4 border border-transparent text-lg font-medium rounded-md text-white bg-primary-600 hover:bg-primary-700 transition-colors duration-300"
+                >
+                  Lancer votre projet e-commerce
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</Layout>

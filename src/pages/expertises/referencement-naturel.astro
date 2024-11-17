@@ -1,0 +1,247 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import TableOfContents from '../../components/TableOfContents.astro';
+import { Image } from 'astro:assets';
+
+const title = "Référencement Naturel (SEO) | Expert SEO Paris | Pantera Agency";
+const description = "Expert en référencement naturel (SEO) à Paris ✓ Stratégie SEO personnalisée ✓ Optimisation technique ✓ Content marketing ✓ Résultats durables ✓ Meilleure visibilité Google";
+
+const tableOfContents = [
+  { id: "presentation", title: "Référencement Naturel (SEO)" },
+  { id: "expertise", title: "Notre Expertise SEO" },
+  { id: "methodologie", title: "Méthodologie" },
+  { id: "optimisation", title: "Optimisations Techniques" },
+  { id: "content", title: "Content Marketing" },
+  { id: "reporting", title: "Suivi & Reporting" },
+  { id: "faq", title: "Questions Fréquentes" }
+];
+---
+
+<Layout title={title} description={description}>
+  <div class="pt-20">
+    <section class="relative h-[400px] flex items-center justify-center overflow-hidden">
+      <div class="absolute inset-0 z-0">
+        <Image
+          src="/images/referencement-naturel-seo-lille.webp"
+          alt="Expert en référencement naturel"
+          width={1920}
+          height={400}
+          class="object-cover w-full h-full"
+        />
+        <div class="absolute inset-0 bg-black/50"></div>
+      </div>
+      
+      <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h1 class="text-4xl font-extrabold text-white sm:text-5xl">
+          Référencement Naturel (SEO)
+        </h1>
+        <p class="mt-4 text-xl text-gray-200 max-w-3xl mx-auto">
+          Améliorez durablement votre visibilité sur Google
+        </p>
+      </div>
+    </section>
+
+    <section class="py-20 bg-gray-50 dark:bg-gray-800">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
+          <div class="lg:col-span-1">
+            <div class="sticky top-24">
+              <TableOfContents items={tableOfContents} />
+            </div>
+          </div>
+
+          <div class="lg:col-span-3">
+            <div class="prose prose-lg max-w-none dark:prose-invert">
+              <section id="presentation">
+                <h2>Référencement Naturel (SEO)</h2>
+                <p>
+                  Le référencement naturel est la clé d'une visibilité durable sur les moteurs de recherche. Notre expertise SEO vous permet d'atteindre les premières positions sur Google pour vos mots-clés stratégiques.
+                </p>
+                <div class="my-8">
+                  <Image
+                    src="/images/seo-agence-pantera-lille.webp"
+                    alt="Stratégie SEO globale"
+                    width={800}
+                    height={400}
+                    class="rounded-lg shadow-lg"
+                  />
+                </div>
+              </section>
+
+              <section id="expertise" class="mt-12">
+                <h2>Notre Expertise SEO</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                  <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow">
+                    <h3 class="text-xl font-semibold mb-4">SEO Technique</h3>
+                    <ul>
+                      <li>Optimisation du code</li>
+                      <li>Structure du site</li>
+                      <li>Vitesse de chargement</li>
+                      <li>Mobile-first</li>
+                    </ul>
+                  </div>
+                  <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow">
+                    <h3 class="text-xl font-semibold mb-4">SEO On-page</h3>
+                    <ul>
+                      <li>Optimisation contenu</li>
+                      <li>Mots-clés stratégiques</li>
+                      <li>Balises méta</li>
+                      <li>Structure sémantique</li>
+                    </ul>
+                  </div>
+                  <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow">
+                    <h3 class="text-xl font-semibold mb-4">SEO Off-page</h3>
+                    <ul>
+                      <li>Netlinking qualitatif</li>
+                      <li>Citations locales</li>
+                      <li>E-A-T</li>
+                      <li>Réseaux sociaux</li>
+                    </ul>
+                  </div>
+                </div>
+              </section>
+
+              <section id="methodologie" class="mt-12">
+                <h2>Notre Méthodologie SEO</h2>
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                  <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow text-center">
+                    <div class="text-4xl font-bold text-primary-600 mb-4">1</div>
+                    <h3 class="text-xl font-semibold mb-2">Audit</h3>
+                    <p class="text-sm">Analyse complète de votre site</p>
+                  </div>
+                  <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow text-center">
+                    <div class="text-4xl font-bold text-primary-600 mb-4">2</div>
+                    <h3 class="text-xl font-semibold mb-2">Stratégie</h3>
+                    <p class="text-sm">Plan d'action personnalisé</p>
+                  </div>
+                  <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow text-center">
+                    <div class="text-4xl font-bold text-primary-600 mb-4">3</div>
+                    <h3 class="text-xl font-semibold mb-2">Optimisation</h3>
+                    <p class="text-sm">Mise en œuvre des actions</p>
+                  </div>
+                  <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow text-center">
+                    <div class="text-4xl font-bold text-primary-600 mb-4">4</div>
+                    <h3 class="text-xl font-semibold mb-2">Suivi</h3>
+                    <p class="text-sm">Analyse et ajustements</p>
+                  </div>
+                </div>
+              </section>
+
+              <section id="optimisation" class="mt-12">
+                <h2>Optimisations Techniques</h2>
+                <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow">
+                  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                      <h3 class="text-xl font-semibold mb-4">Performance</h3>
+                      <ul>
+                        <li>✓ Core Web Vitals</li>
+                        <li>✓ Optimisation images</li>
+                        <li>✓ Minification code</li>
+                        <li>✓ Cache avancé</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <h3 class="text-xl font-semibold mb-4">Architecture</h3>
+                      <ul>
+                        <li>✓ Structure URL</li>
+                        <li>✓ Navigation optimisée</li>
+                        <li>✓ Maillage interne</li>
+                        <li>✓ Schema.org</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <section id="content" class="mt-12">
+                <h2>Content Marketing SEO</h2>
+                <div class="bg-white dark:bg-gray-900 p-8 rounded-lg shadow-lg">
+                  <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                      <h3 class="text-xl font-semibold mb-4">Stratégie de Contenu</h3>
+                      <ul>
+                        <li>Recherche de mots-clés</li>
+                        <li>Calendrier éditorial</li>
+                        <li>Création de contenu optimisé</li>
+                        <li>Optimisation existant</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <h3 class="text-xl font-semibold mb-4">Types de Contenu</h3>
+                      <ul>
+                        <li>Articles de blog</li>
+                        <li>Pages de service</li>
+                        <li>Guides pratiques</li>
+                        <li>Études de cas</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <section id="reporting" class="mt-12">
+                <h2>Suivi & Reporting</h2>
+                <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow">
+                  <h3 class="text-xl font-semibold mb-4">Indicateurs Suivis</h3>
+                  <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div>
+                      <h4 class="font-semibold mb-2">Visibilité</h4>
+                      <ul>
+                        <li>Positions mots-clés</li>
+                        <li>Trafic organique</li>
+                        <li>Pages indexées</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <h4 class="font-semibold mb-2">Engagement</h4>
+                      <ul>
+                        <li>Taux de rebond</li>
+                        <li>Temps sur site</li>
+                        <li>Pages par session</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <h4 class="font-semibold mb-2">Conversion</h4>
+                      <ul>
+                        <li>Taux de conversion</li>
+                        <li>Objectifs atteints</li>
+                        <li>ROI SEO</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <section id="faq" class="mt-12">
+                <h2>Questions Fréquentes</h2>
+                <div class="space-y-6">
+                  <div>
+                    <h3 class="text-xl font-semibold mb-2">Combien de temps pour voir des résultats en SEO ?</h3>
+                    <p>Le SEO est un travail de fond qui nécessite généralement 3 à 6 mois pour voir les premiers résultats significatifs.</p>
+                  </div>
+                  <div>
+                    <h3 class="text-xl font-semibold mb-2">Garantissez-vous la première position sur Google ?</h3>
+                    <p>Non, aucune agence sérieuse ne peut garantir la première position. Nous nous engageons sur une amélioration mesurable du positionnement.</p>
+                  </div>
+                  <div>
+                    <h3 class="text-xl font-semibold mb-2">Le SEO fonctionne-t-il pour tous les secteurs ?</h3>
+                    <p>Oui, mais la stratégie doit être adaptée à votre secteur, votre concurrence et vos objectifs spécifiques.</p>
+                  </div>
+                </div>
+              </section>
+
+              <div class="mt-12 text-center">
+                <a
+                  href="#contact"
+                  class="inline-flex items-center px-8 py-4 border border-transparent text-lg font-medium rounded-md text-white bg-primary-600 hover:bg-primary-700 transition-colors duration-300"
+                >
+                  Booster votre référencement
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</Layout>

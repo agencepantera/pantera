@@ -1,0 +1,213 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import TableOfContents from '../../components/TableOfContents.astro';
+import { Image } from 'astro:assets';
+
+const title = "Audit de Site Web | Analyse Complète | Pantera Agency";
+const description = "Audit complet de site web ✓ Analyse technique ✓ UX/UI ✓ Performance ✓ Sécurité ✓ Recommandations détaillées pour optimiser votre site internet";
+
+const tableOfContents = [
+  { id: "presentation", title: "Audit de Site Web" },
+  { id: "analyse", title: "Points d'Analyse" },
+  { id: "methodologie", title: "Méthodologie" },
+  { id: "livrables", title: "Livrables" },
+  { id: "recommandations", title: "Recommandations" },
+  { id: "faq", title: "Questions Fréquentes" }
+];
+---
+
+<Layout title={title} description={description}>
+  <div class="pt-20">
+    <section class="relative h-[400px] flex items-center justify-center overflow-hidden">
+      <div class="absolute inset-0 z-0">
+        <Image
+          src="/images/audit-site-web-wattrelos-lille.webp"
+          alt="Audit de site web professionnel"
+          width={1920}
+          height={400}
+          class="object-cover w-full h-full"
+        />
+        <div class="absolute inset-0 bg-black/50"></div>
+      </div>
+      
+      <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h1 class="text-4xl font-extrabold text-white sm:text-5xl">
+          Audit de Site Web
+        </h1>
+        <p class="mt-4 text-xl text-gray-200 max-w-3xl mx-auto">
+          Analyse approfondie pour optimiser votre présence en ligne
+        </p>
+      </div>
+    </section>
+
+    <section class="py-20 bg-gray-50 dark:bg-gray-800">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
+          <div class="lg:col-span-1">
+            <div class="sticky top-24">
+              <TableOfContents items={tableOfContents} />
+            </div>
+          </div>
+
+          <div class="lg:col-span-3">
+            <div class="prose prose-lg max-w-none dark:prose-invert">
+              <section id="presentation">
+                <h2>Audit de Site Web</h2>
+                <p>
+                  Un audit complet de votre site web est essentiel pour identifier les axes d'amélioration et optimiser votre présence en ligne. Notre analyse approfondie couvre tous les aspects techniques, fonctionnels et marketing de votre site.
+                </p>
+                <div class="my-8">
+                  <Image
+                    src="/images/audit-site-wattrelos-agence-pantera.webp"
+                    alt="Vue d'ensemble de notre audit de site"
+                    width={800}
+                    height={400}
+                    class="rounded-lg shadow-lg"
+                  />
+                </div>
+              </section>
+
+              <section id="analyse" class="mt-12">
+                <h2>Points d'Analyse</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                  <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow">
+                    <h3 class="text-xl font-semibold mb-4">Technique</h3>
+                    <ul>
+                      <li>Performance</li>
+                      <li>Sécurité</li>
+                      <li>Code source</li>
+                      <li>Architecture</li>
+                    </ul>
+                  </div>
+                  <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow">
+                    <h3 class="text-xl font-semibold mb-4">UX/UI</h3>
+                    <ul>
+                      <li>Navigation</li>
+                      <li>Design</li>
+                      <li>Responsive</li>
+                      <li>Accessibilité</li>
+                    </ul>
+                  </div>
+                  <div class="bg-white dark:bg-gray-900 <boltAction type="file" filePath="src/pages/expertises/audit-site.astro">p-6 rounded-lg shadow">
+                    <h3 class="text-xl font-semibold mb-4">Marketing</h3>
+                    <ul>
+                      <li>SEO</li>
+                      <li>Conversion</li>
+                      <li>Analytics</li>
+                      <li>Contenu</li>
+                    </ul>
+                  </div>
+                </div>
+              </section>
+
+              <section id="methodologie" class="mt-12">
+                <h2>Notre Méthodologie</h2>
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                  <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow text-center">
+                    <div class="text-4xl font-bold text-primary-600 mb-4">1</div>
+                    <h3 class="text-xl font-semibold mb-2">Analyse</h3>
+                    <p class="text-sm">Collecte des données</p>
+                  </div>
+                  <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow text-center">
+                    <div class="text-4xl font-bold text-primary-600 mb-4">2</div>
+                    <h3 class="text-xl font-semibold mb-2">Diagnostic</h3>
+                    <p class="text-sm">Identification des problèmes</p>
+                  </div>
+                  <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow text-center">
+                    <div class="text-4xl font-bold text-primary-600 mb-4">3</div>
+                    <h3 class="text-xl font-semibold mb-2">Solutions</h3>
+                    <p class="text-sm">Recommandations</p>
+                  </div>
+                  <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow text-center">
+                    <div class="text-4xl font-bold text-primary-600 mb-4">4</div>
+                    <h3 class="text-xl font-semibold mb-2">Plan d'action</h3>
+                    <p class="text-sm">Priorisation</p>
+                  </div>
+                </div>
+              </section>
+
+              <section id="livrables" class="mt-12">
+                <h2>Livrables</h2>
+                <div class="bg-white dark:bg-gray-900 p-8 rounded-lg shadow-lg">
+                  <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                      <h3 class="text-xl font-semibold mb-4">Rapport Détaillé</h3>
+                      <ul>
+                        <li>Analyse technique</li>
+                        <li>Tests de performance</li>
+                        <li>Audit UX/UI</li>
+                        <li>Analyse SEO</li>
+                        <li>Sécurité et conformité</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <h3 class="text-xl font-semibold mb-4">Plan d'Action</h3>
+                      <ul>
+                        <li>Recommandations priorisées</li>
+                        <li>Solutions techniques</li>
+                        <li>Estimation des ressources</li>
+                        <li>Planning de mise en œuvre</li>
+                        <li>Budget estimatif</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <section id="recommandations" class="mt-12">
+                <h2>Recommandations</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow">
+                    <h3 class="text-xl font-semibold mb-4">Court Terme</h3>
+                    <ul>
+                      <li>✓ Optimisations rapides</li>
+                      <li>✓ Corrections critiques</li>
+                      <li>✓ Quick wins</li>
+                      <li>✓ Améliorations UX</li>
+                    </ul>
+                  </div>
+                  <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow">
+                    <h3 class="text-xl font-semibold mb-4">Long Terme</h3>
+                    <ul>
+                      <li>✓ Refonte technique</li>
+                      <li>✓ Évolution design</li>
+                      <li>✓ Stratégie contenu</li>
+                      <li>✓ Plan d'optimisation</li>
+                    </ul>
+                  </div>
+                </div>
+              </section>
+
+              <section id="faq" class="mt-12">
+                <h2>Questions Fréquentes</h2>
+                <div class="space-y-6">
+                  <div>
+                    <h3 class="text-xl font-semibold mb-2">Combien de temps dure un audit complet ?</h3>
+                    <p>Un audit complet prend généralement entre 1 et 2 semaines selon la taille et la complexité du site.</p>
+                  </div>
+                  <div>
+                    <h3 class="text-xl font-semibold mb-2">Quels accès sont nécessaires ?</h3>
+                    <p>Nous avons besoin d'accès à votre hébergement, back-office, Google Analytics et Search Console pour une analyse complète.</p>
+                  </div>
+                  <div>
+                    <h3 class="text-xl font-semibold mb-2">Comment sont priorisées les recommandations ?</h3>
+                    <p>Les recommandations sont priorisées selon leur impact, leur urgence et les ressources nécessaires.</p>
+                  </div>
+                </div>
+              </section>
+
+              <div class="mt-12 text-center">
+                <a
+                  href="#contact"
+                  class="inline-flex items-center px-8 py-4 border border-transparent text-lg font-medium rounded-md text-white bg-primary-600 hover:bg-primary-700 transition-colors duration-300"
+                >
+                  Demander un audit
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</Layout>

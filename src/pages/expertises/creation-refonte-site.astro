@@ -1,0 +1,231 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import TableOfContents from '../../components/TableOfContents.astro';
+import { Image } from 'astro:assets';
+
+const title = "Création et Refonte de Site Web | Agence Web Paris | Pantera Agency";
+const description = "Expert en création et refonte de site web à Paris ✓ Design moderne ✓ Développement sur-mesure ✓ Sites performants ✓ Optimisés SEO ✓ Responsive design";
+
+const tableOfContents = [
+  { id: "presentation", title: "Création et Refonte de Site" },
+  { id: "services", title: "Nos Services" },
+  { id: "methodologie", title: "Méthodologie" },
+  { id: "technologies", title: "Technologies" },
+  { id: "process", title: "Process de Création" },
+  { id: "faq", title: "Questions Fréquentes" }
+];
+---
+
+<Layout title={title} description={description}>
+  <div class="pt-20">
+    <section class="relative h-[400px] flex items-center justify-center overflow-hidden">
+      <div class="absolute inset-0 z-0">
+        <Image
+          src="/images/creation-refonte-site-web-wattrelos-lille.webp"
+          alt="Création et refonte de site web"
+          width={1920}
+          height={400}
+          class="object-cover w-full h-full"
+        />
+        <div class="absolute inset-0 bg-black/50"></div>
+      </div>
+      
+      <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h1 class="text-4xl font-extrabold text-white sm:text-5xl">
+          Création et Refonte de Site Web
+        </h1>
+        <p class="mt-4 text-xl text-gray-200 max-w-3xl mx-auto">
+          Des sites web modernes, performants et optimisés pour vos objectifs
+        </p>
+      </div>
+    </section>
+
+    <section class="py-20 bg-gray-50 dark:bg-gray-800">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
+          <div class="lg:col-span-1">
+            <div class="sticky top-24">
+              <TableOfContents items={tableOfContents} />
+            </div>
+          </div>
+
+          <div class="lg:col-span-3">
+            <div class="prose prose-lg max-w-none dark:prose-invert">
+              <section id="presentation">
+                <h2>Création et Refonte de Site</h2>
+                <p>
+                  Que vous ayez besoin d'un nouveau site web ou d'une refonte complète, notre équipe d'experts vous accompagne dans la création d'une présence en ligne performante et adaptée à vos objectifs business.
+                </p>
+                <div class="my-8">
+                  <Image
+                    src="/images/refonte-site-web-agence-pantera.webp"
+                    alt="Processus de création de site web"
+                    width={800}
+                    height={400}
+                    class="rounded-lg shadow-lg"
+                  />
+                </div>
+              </section>
+
+              <section id="services" class="mt-12">
+                <h2>Nos Services</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                  <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow">
+                    <h3 class="text-xl font-semibold mb-4">Création</h3>
+                    <ul>
+                      <li>Site vitrine</li>
+                      <li>E-commerce</li>
+                      <li>Application web</li>
+                      <li>Landing page</li>
+                    </ul>
+                  </div>
+                  <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow">
+                    <h3 class="text-xl font-semibold mb-4">Refonte</h3>
+                    <ul>
+                      <li>Audit préalable</li>
+                      <li>Modernisation</li>
+                      <li>Migration</li>
+                      <li>Optimisation</li>
+                    </ul>
+                  </div>
+                  <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow">
+                    <h3 class="text-xl font-semibold mb-4">Maintenance</h3>
+                    <ul>
+                      <li>Mises à jour</li>
+                      <li>Sécurité</li>
+                      <li>Support</li>
+                      <li>Évolutions</li>
+                    </ul>
+                  </div>
+                </div>
+              </section>
+
+              <section id="methodologie" class="mt-12">
+                <h2>Notre Méthodologie</h2>
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                  <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow text-center">
+                    <div class="text-4xl font-bold text-primary-600 mb-4">1</div>
+                    <h3 class="text-xl font-semibold mb-2">Analyse</h3>
+                    <p class="text-sm">Étude des besoins</p>
+                  </div>
+                  <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow text-center">
+                    <div class="text-4xl font-bold text-primary-600 mb-4">2</div>
+                    <h3 class="text-xl font-semibold mb-2">Conception</h3>
+                    <p class="text-sm">Design & UX</p>
+                  </div>
+                  <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow text-center">
+                    <div class="text-4xl font-bold text-primary-600 mb-4">3</div>
+                    <h3 class="text-xl font-semibold mb-2">Développement</h3>
+                    <p class="text-sm">Intégration</p>
+                  </div>
+                  <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow text-center">
+                    <div class="text-4xl font-bold text-primary-600 mb-4">4</div>
+                    <h3 class="text-xl font-semibold mb-2">Déploiement</h3>
+                    <p class="text-sm">Mise en ligne</p>
+                  </div>
+                </div>
+              </section>
+
+              <section id="technologies" class="mt-12">
+                <h2>Technologies</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow">
+                    <h3 class="text-xl font-semibold mb-4">Front-end</h3>
+                    <ul>
+                      <li>✓ React.js / Vue.js</li>
+                      <li>✓ HTML5 / CSS3</li>
+                      <li>✓ JavaScript moderne</li>
+                      <li>✓ Responsive design</li>
+                    </ul>
+                  </div>
+                  <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow">
+                    <h3 class="text-xl font-semibold mb-4">Back-end</h3>
+                    <ul>
+                      <li>✓ Node.js</li>
+                      <li>✓ PHP / Laravel</li>
+                      <li>✓ API REST</li>
+                      <li>✓ Base de données</li>
+                    </ul>
+                  </div>
+                </div>
+              </section>
+
+              <section id="process" class="mt-12">
+                <h2>Process de Création</h2>
+                <div class="bg-white dark:bg-gray-900 p-8 rounded-lg shadow-lg">
+                  <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                      <h3 class="text-xl font-semibold mb-4">Phase 1: Préparation</h3>
+                      <ul>
+                        <li>Analyse des besoins</li>
+                        <li>Benchmark concurrentiel</li>
+                        <li>Définition des objectifs</li>
+                        <li>Architecture de l'information</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <h3 class="text-xl font-semibold mb-4">Phase 2: Design</h3>
+                      <ul>
+                        <li>Wireframes</li>
+                        <li>Maquettes graphiques</li>
+                        <li>Validation client</li>
+                        <li>Ajustements</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+                    <div>
+                      <h3 class="text-xl font-semibold mb-4">Phase 3: Développement</h3>
+                      <ul>
+                        <li>Intégration front-end</li>
+                        <li>Développement back-end</li>
+                        <li>Tests fonctionnels</li>
+                        <li>Optimisation performance</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <h3 class="text-xl font-semibold mb-4">Phase 4: Finalisation</h3>
+                      <ul>
+                        <li>Tests utilisateurs</li>
+                        <li>Optimisation SEO</li>
+                        <li>Formation client</li>
+                        <li>Mise en production</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <section id="faq" class="mt-12">
+                <h2>Questions Fréquentes</h2>
+                <div class="space-y-6">
+                  <div>
+                    <h3 class="text-xl font-semibold mb-2">Combien de temps pour créer un site ?</h3>
+                    <p>Le délai varie selon la complexité du projet, généralement entre 6 et 12 semaines pour un site vitrine, et 3 à 6 mois pour un e-commerce.</p>
+                  </div>
+                  <div>
+                    <h3 class="text-xl font-semibold mb-2">Le site sera-t-il responsive ?</h3>
+                    <p>Oui, tous nos sites sont responsive by design et optimisés pour tous les appareils (mobile, tablette, desktop).</p>
+                  </div>
+                  <div>
+                    <h3 class="text-xl font-semibold mb-2">Proposez-vous un hébergement ?</h3>
+                    <p>Oui, nous proposons des solutions d'hébergement haute performance et sécurisées, adaptées à vos besoins.</p>
+                  </div>
+                </div>
+              </section>
+
+              <div class="mt-12 text-center">
+                <a
+                  href="#contact"
+                  class="inline-flex items-center px-8 py-4 border border-transparent text-lg font-medium rounded-md text-white bg-primary-600 hover:bg-primary-700 transition-colors duration-300"
+                >
+                  Démarrer votre projet
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</Layout>

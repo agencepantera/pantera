@@ -1,0 +1,245 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import TableOfContents from '../../components/TableOfContents.astro';
+import { Image } from 'astro:assets';
+
+const title = "Référencement Payant (SEA) | Expert Google Ads | Pantera Agency";
+const description = "Expert en référencement payant (SEA) à Paris ✓ Campagnes Google Ads optimisées ✓ ROI maximisé ✓ Stratégie sur-mesure ✓ Gestion professionnelle de vos campagnes publicitaires";
+
+const tableOfContents = [
+  { id: "presentation", title: "Référencement Payant (SEA)" },
+  { id: "expertise", title: "Notre Expertise SEA" },
+  { id: "methodologie", title: "Méthodologie" },
+  { id: "campagnes", title: "Types de Campagnes" },
+  { id: "optimisation", title: "Optimisation Continue" },
+  { id: "reporting", title: "Suivi & Reporting" },
+  { id: "faq", title: "Questions Fréquentes" }
+];
+---
+
+<Layout title={title} description={description}>
+  <div class="pt-20">
+    <section class="relative h-[400px] flex items-center justify-center overflow-hidden">
+      <div class="absolute inset-0 z-0">
+        <Image
+          src="/images/referencement-payant-sea-agence-pantera.webp"
+          alt="Expert en référencement payant"
+          width={1920}
+          height={400}
+          class="object-cover w-full h-full"
+        />
+        <div class="absolute inset-0 bg-black/50"></div>
+      </div>
+      
+      <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h1 class="text-4xl font-extrabold text-white sm:text-5xl">
+          Référencement Payant (SEA)
+        </h1>
+        <p class="mt-4 text-xl text-gray-200 max-w-3xl mx-auto">
+          Des campagnes publicitaires performantes pour des résultats immédiats
+        </p>
+      </div>
+    </section>
+
+    <section class="py-20 bg-gray-50 dark:bg-gray-800">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
+          <div class="lg:col-span-1">
+            <div class="sticky top-24">
+              <TableOfContents items={tableOfContents} />
+            </div>
+          </div>
+
+          <div class="lg:col-span-3">
+            <div class="prose prose-lg max-w-none dark:prose-invert">
+              <section id="presentation">
+                <h2>Référencement Payant (SEA)</h2>
+                <p>
+                  Le référencement payant est un levier puissant pour générer du trafic qualifié rapidement. Notre expertise en Google Ads vous permet d'obtenir un retour sur investissement optimal de vos campagnes publicitaires.
+                </p>
+                <div class="my-8">
+                  <Image
+                    src="/images/sea-referencement-payant-agence-pantera.webp"
+                    alt="Vue d'ensemble des campagnes SEA"
+                    width={800}
+                    height={400}
+                    class="rounded-lg shadow-lg"
+                  />
+                </div>
+              </section>
+
+              <section id="expertise" class="mt-12">
+                <h2>Notre Expertise SEA</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                  <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow">
+                    <h3 class="text-xl font-semibold mb-4">Search Ads</h3>
+                    <ul>
+                      <li>Mots-clés ciblés</li>
+                      <li>Annonces performantes</li>
+                      <li>Extensions optimisées</li>
+                      <li>Score de qualité</li>
+                    </ul>
+                  </div>
+                  <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow">
+                    <h3 class="text-xl font-semibold mb-4">Display Ads</h3>
+                    <ul>
+                      <li>Ciblage avancé</li>
+                      <li>Bannières créatives</li>
+                      <li>Remarketing</li>
+                      <li>Placement premium</li>
+                    </ul>
+                  </div>
+                  <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow">
+                    <h3 class="text-xl font-semibold mb-4">Shopping Ads</h3>
+                    <ul>
+                      <li>Flux produits</li>
+                      <li>Smart Shopping</li>
+                      <li>Optimisation CPA</li>
+                      <li>Performance Tracking</li>
+                    </ul>
+                  </div>
+                </div>
+              </section>
+
+              <section id="methodologie" class="mt-12">
+                <h2>Notre Méthodologie SEA</h2>
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                  <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow text-center">
+                    <div class="text-4xl font-bold text-primary-600 mb-4">1</div>
+                    <h3 class="text-xl font-semibold mb-2">Audit</h3>
+                    <p class="text-sm">Analyse de votre marché</p>
+                  </div>
+                  <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow text-center">
+                    <div class="text-4xl font-bold text-primary-600 mb-4">2</div>
+                    <h3 class="text-xl font-semibold mb-2">Stratégie</h3>
+                    <p class="text-sm">Plan média personnalisé</p>
+                  </div>
+                  <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow text-center">
+                    <div class="text-4xl font-bold text-primary-600 mb-4">3</div>
+                    <h3 class="text-xl font-semibold mb-2">Lancement</h3>
+                    <p class="text-sm">Déploiement campagnes</p>
+                  </div>
+                  <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow text-center">
+                    <div class="text-4xl font-bold text-primary-600 mb-4">4</div>
+                    <h3 class="text-xl font-semibold mb-2">Optimisation</h3>
+                    <p class="text-sm">Amélioration continue</p>
+                  </div>
+                </div>
+              </section>
+
+              <section id="campagnes" class="mt-12">
+                <h2>Types de Campagnes</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow">
+                    <h3 class="text-xl font-semibold mb-4">Campagnes Search</h3>
+                    <ul>
+                      <li>✓ Recherche ciblée</li>
+                      <li>✓ Intention d'achat</li>
+                      <li>✓ Mots-clés longue traîne</li>
+                      <li>✓ Extensions d'annonces</li>
+                    </ul>
+                  </div>
+                  <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow">
+                    <h3 class="text-xl font-semibold mb-4">Campagnes Display</h3>
+                    <ul>
+                      <li>✓ Remarketing dynamique</li>
+                      <li>✓ Ciblage contextuel</li>
+                      <li>✓ Audiences similaires</li>
+                      <li>✓ Placement manuel</li>
+                    </ul>
+                  </div>
+                </div>
+              </section>
+
+              <section id="optimisation" class="mt-12">
+                <h2>Optimisation Continue</h2>
+                <div class="bg-white dark:bg-gray-900 p-8 rounded-lg shadow-lg">
+                  <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                      <h3 class="text-xl font-semibold mb-4">Performance</h3>
+                      <ul>
+                        <li>A/B Testing annonces</li>
+                        <li>Optimisation enchères</li>
+                        <li>Ajustement ciblage</li>
+                        <li>Amélioration QS</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <h3 class="text-xl font-semibold mb-4">Budget</h3>
+                      <ul>
+                        <li>Contrôle des coûts</li>
+                        <li>Optimisation CPA</li>
+                        <li>ROAS tracking</li>
+                        <li>Attribution modeling</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <section id="reporting" class="mt-12">
+                <h2>Suivi & Reporting</h2>
+                <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow">
+                  <h3 class="text-xl font-semibold mb-4">KPIs Suivis</h3>
+                  <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div>
+                      <h4 class="font-semibold mb-2">Performance</h4>
+                      <ul>
+                        <li>CTR</li>
+                        <li>CPC moyen</li>
+                        <li>Position moyenne</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <h4 class="font-semibold mb-2">Conversion</h4>
+                      <ul>
+                        <li>Taux de conversion</li>
+                        <li>CPA</li>
+                        <li>ROAS</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <h4 class="font-semibold mb-2">Qualité</h4>
+                      <ul>
+                        <li>Score de qualité</li>
+                        <li>Taux de rebond</li>
+                        <li>Temps sur site</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <section id="faq" class="mt-12">
+                <h2>Questions Fréquentes</h2>
+                <div class="space-y-6">
+                  <div>
+                    <h3 class="text-xl font-semibold mb-2">Quel budget minimum pour commencer ?</h3>
+                    <p>Le budget minimum recommandé dépend de votre secteur et de vos objectifs. Nous définissons ensemble un budget optimal basé sur votre ROI cible.</p>
+                  </div>
+                  <div>
+                    <h3 class="text-xl font-semibold mb-2">Combien de temps pour voir des résultats ?</h3>
+                    <p>Les premiers résultats sont visibles dès le lancement des campagnes. L'optimisation continue permet d'améliorer les performances sur la durée.</p>
+                  </div>
+                  <div>
+                    <h3 class="text-xl font-semibold mb-2">Comment mesurez-vous le ROI ?</h3>
+                    <p>Nous mettons en place un tracking précis de vos conversions et calculons le retour sur investissement en fonction de votre valeur client.</p>
+                  </div>
+                </div>
+              </section>
+
+              <div class="mt-12 text-center">
+                <a
+                  href="#contact"
+                  class="inline-flex items-center px-8 py-4 border border-transparent text-lg font-medium rounded-md text-white bg-primary-600 hover:bg-primary-700 transition-colors duration-300"
+                >
+                  Lancer vos campagnes SEA
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</Layout>
