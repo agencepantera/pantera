@@ -17,11 +17,13 @@
     @apply inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm transition-colors duration-300;
   }
 
+  /* Bouton principal avec contraste amélioré */
   .btn-primary {
-    @apply bg-primary-600 text-white hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500;
+    @apply bg-primary-700 text-white hover:bg-primary-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-600;
   }
 
+  /* Bouton secondaire avec meilleur contraste */
   .btn-secondary {
-    @apply bg-white text-gray-700 hover:bg-gray-50 border-gray-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500;
+    @apply bg-white text-gray-800 hover:bg-gray-100 border-gray-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500;
   }
 }
