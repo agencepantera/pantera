@@ -28,7 +28,8 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     <link rel="canonical" href={canonicalURL} />
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" as="style" fetchpriority="high">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
 
     <!-- SEO -->
     <title>{title} | Pantera Agency</title>
@@ -67,30 +68,12 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
         --background-dark: #1a1a1a;
       }
 
-      html {
-        scroll-behavior: smooth;
-      }
-
       body {
         font-family: var(--font-sans);
         font-size: 16px;
         line-height: 1.6;
         color: var(--text-dark);
         background-color: var(--background-light);
-      }
-
-      .dark body {
-        color: var(--text-light);
-        background-color: var(--background-dark);
-      }
-
-      a {
-        color: var(--primary-color);
-        text-decoration: none;
-      }
-
-      a:hover {
-        color: var(--primary-hover);
       }
     </style>
   </body>
