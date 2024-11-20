@@ -11,28 +11,30 @@ import { Image } from 'astro:assets';
       height={1080}
       class="object-cover w-full h-full"
     />
-    <div class="absolute inset-0 bg-black/70"></div>
+    <div class="absolute inset-0 bg-black/85"></div> <!-- Augmentation de l'opacité -->
   </div>
-  
+
   <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
     <h1 class="text-4xl sm:text-6xl lg:text-7xl font-bold text-white mb-6">
       <span class="block">Votre Agence Web</span>
-      <span class="block text-primary-300">sur la Métropole Lilloise</span>
+      <span class="block text-primary-400">sur la Métropole Lilloise</span> <!-- Ajustement des couleurs -->
     </h1>
-    <p class="text-xl sm:text-2xl text-gray-100 mb-8 max-w-3xl mx-auto">
+    <p class="text-xl sm:text-2xl text-gray-100 mb-8 max-w-3xl mx-auto" style="color: #f5f5f5;">
       Experts en création de sites web, référencement et stratégie digitale à Wattrelos et sur toute la MEL
     </p>
     <div class="flex flex-col sm:flex-row gap-4 justify-center">
       <a
         href="#contact"
         class="inline-flex items-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary-800 hover:bg-primary-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-700 transition-colors duration-300"
+        style="background-color: #1a202c;"
         aria-label="Démarrer votre projet - Contact"
       >
         Démarrer votre projet
       </a>
       <a
         href="#services"
-        class="inline-flex items-center px-8 py-3 border-2 border-white text-base font-medium rounded-md text-white hover:bg-white hover:text-gray-900 transition-colors duration-300"
+        class="inline-flex items-center px-8 py-3 border-2 border-white text-base font-medium rounded-md text-white hover:bg-gray-100 hover:text-gray-900 transition-colors duration-300"
+        style="background-color: #f8f8f8; color: #111111;"
         aria-label="Découvrir nos services"
       >
         Découvrir nos services

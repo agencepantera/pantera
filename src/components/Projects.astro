@@ -24,7 +24,7 @@ const projects = [
 <section id="projects" class="py-20">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="text-center">
-      <h2 class="text-3xl font-extrabold text-gray-900 dark:text-white sm:text-4xl">
+      <h2 class="text-3xl font-extrabold text-gray-900 dark:text-white sm:text-4xl" style="color: #222222;">
         Nos Réalisations
       </h2>
       <p class="mt-4 max-w-2xl mx-auto text-xl text-gray-600 dark:text-gray-300">
@@ -41,11 +41,11 @@ const projects = [
               alt={project.title}
               class="h-full w-full object-cover object-center transition-transform duration-300 group-hover:scale-110"
             />
-            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div> <!-- Contraste renforcé -->
           </div>
           <div class="absolute bottom-0 left-0 right-0 p-6">
             <p class="text-sm font-medium text-primary-400">{project.category}</p>
-            <h3 class="mt-2 text-xl font-semibold text-white">{project.title}</h3>
+            <h3 class="mt-2 text-xl font-semibold text-white text-shadow-md">{project.title}</h3>
             <p class="mt-2 text-sm text-gray-300">{project.description}</p>
           </div>
         </div>
