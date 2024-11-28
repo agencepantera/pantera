@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://pantera-agency.fr/sitemap.xml
