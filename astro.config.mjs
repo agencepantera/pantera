@@ -4,7 +4,7 @@ import sitemap from '@astrojs/sitemap';
 import mdx from '@astrojs/mdx';
 
 export default defineConfig({
-  site: 'https://pantera-agency.com',
+  site: 'https://pantera-agency.fr',
   integrations: [
     tailwind(),
     sitemap(),
