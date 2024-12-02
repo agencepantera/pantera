@@ -12,9 +12,13 @@ const tableOfContents = [
   { id: "solutions", title: "Nos Solutions" },
   { id: "performance", title: "Performance & Conversion" },
   { id: "technologies", title: "Technologies E-commerce" },
-  { id: "tarifs", title: "Tarifs E-commerce" },
   { id: "faq", title: "Questions Fréquentes" }
 ];
+
+const heroTitle = "Création de Site E-commerce sur la Métropole Lilloise";
+const heroSubtitle = "Solutions e-commerce performantes et sur-mesure";
+const heroImage = "/images/ecommerce-agence-pantera.webp";
+
 ---
 
 <Layout title={title} description={description}>
@@ -22,7 +26,7 @@ const tableOfContents = [
     <section class="relative h-[400px] flex items-center justify-center overflow-hidden">
       <div class="absolute inset-0 z-0">
         <Image
-          src="/images/ecommerce-wattrelos-agence-pantera.webp"
+          src={heroImage}
           alt="Création de site e-commerce professionnel"
           width={1920}
           height={400}
@@ -33,10 +37,10 @@ const tableOfContents = [
       
       <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h1 class="text-4xl font-extrabold text-white sm:text-5xl">
-          Solutions E-commerce Professionnelles
+          {heroTitle}
         </h1>
         <p class="mt-4 text-xl text-gray-100 max-w-3xl mx-auto">
-          Développez votre business en ligne avec une boutique performante
+          {heroSubtitle}
         </p>
       </div>
     </section>
@@ -137,7 +141,7 @@ const tableOfContents = [
                   <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow">
                     <h3 class="text-xl font-semibold mb-4">Optimisation Technique</h3>
                     <ul>
-                      <li>Temps de chargement < 2s</li>
+                      <li>Temps de chargement &lt; 2s</li>
                       <li>Core Web Vitals optimisés</li>
                       <li>Cache avancé</li>
                       <li>CDN mondial</li>
@@ -176,66 +180,28 @@ const tableOfContents = [
                 </ul>
               </section>
 
-              <section id="tarifs" class="mt-12">
-                <h2>Tarifs E-commerce</h2>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                  <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow">
-                    <h3 class="text-xl font-semibold mb-4">Starter</h3>
-                    <p class="text-3xl font-bold text-primary-600 mb-4">À partir de 4 990€</p>
-                    <ul>
-                      <li>✓ Jusqu'à 100 produits</li>
-                      <li>✓ Paiement CB sécurisé</li>
-                      <li>✓ Gestion des stocks</li>
-                      <li>✓ Support 6 mois</li>
-                    </ul>
-                  </div>
-                  <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow border-2 border-primary-500">
-                    <h3 class="text-xl font-semibold mb-4">Business</h3>
-                    <p class="text-3xl font-bold text-primary-600 mb-4">À partir de 9 990€</p>
-                    <ul>
-                      <li>✓ Jusqu'à 1000 produits</li>
-                      <li>✓ Multi-paiement</li>
-                      <li>✓ Marketing automation</li>
-                      <li>✓ Import produits</li>
-                      <li>✓ Support 12 mois</li>
-                    </ul>
-                  </div>
-                  <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow">
-                    <h3 class="text-xl font-semibold mb-4">Enterprise</h3>
-                    <p class="text-3xl font-bold text-primary-600 mb-4">Sur devis</p>
-                    <ul>
-                      <li>✓ Produits illimités</li>
-                      <li>✓ Multi-boutiques</li>
-                      <li>✓ API personnalisée</li>
-                      <li>✓ ERP/CRM intégré</li>
-                      <li>✓ Support premium</li>
-                    </ul>
-                  </div>
-                </div>
-              </section>
-
               <section id="faq" class="mt-12">
                 <h2>Questions Fréquentes</h2>
                 <div class="space-y-6">
                   <div>
-                    <h3 class="text-xl font-semibold mb-2">Quel est le délai de mise en ligne ?</h3>
-                    <p>Le délai moyen est de 8 à 12 semaines selon la complexité du projet et les fonctionnalités requises.</p>
+                    <h3 class="text-xl font-semibold mb-2">Quel est le délai de création ?</h3>
+                    <p>Le délai moyen est de 6 à 12 semaines selon la complexité du projet et vos besoins spécifiques.</p>
                   </div>
                   <div>
-                    <h3 class="text-xl font-semibold mb-2">Quels moyens de paiement proposez-vous ?</h3>
-                    <p>Nous intégrons tous les principaux moyens de paiement : CB, PayPal, Apple Pay, virement, etc.</p>
+                    <h3 class="text-xl font-semibold mb-2">Le site sera-t-il référencé localement ?</h3>
+                    <p>Oui, nous optimisons votre site pour un référencement local sur Wattrelos, Lille et toute la métropole lilloise.</p>
                   </div>
                   <div>
-                    <h3 class="text-xl font-semibold mb-2">La boutique sera-t-elle mobile-friendly ?</h3>
-                    <p>Oui, toutes nos boutiques sont 100% responsives et optimisées pour tous les appareils.</p>
+                    <h3 class="text-xl font-semibold mb-2">Proposez-vous un accompagnement ?</h3>
+                    <p>Oui, nous assurons un suivi personnalisé et une maintenance régulière de votre site e-commerce.</p>
                   </div>
                 </div>
               </section>
 
               <div class="mt-12 text-center">
                 <a
-                  href="#contact"
-                  class="inline-flex items-center px-8 py-4 border border-transparent text-lg font-medium rounded-md text-white bg-primary-700 hover:bg-primary-700 transition-colors duration-300"
+                  href="/#contact"
+                  class="inline-flex items-center px-8 py-4 border border-transparent text-lg font-medium rounded-md text-white bg-primary-600 hover:bg-primary-700 transition-colors duration-300"
                 >
                   Lancer votre projet e-commerce
                 </a>

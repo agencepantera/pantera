@@ -15,6 +15,11 @@ const tableOfContents = [
   { id: "reporting", title: "Suivi & Reporting" },
   { id: "faq", title: "Questions Fréquentes" }
 ];
+
+const heroTitle = "Référencement Naturel (SEO)";
+const heroSubtitle = "Optimisez votre visibilité sur les moteurs de recherche";
+const heroImage = "/images/referencement-naturel-agence-pantera.webp";
+
 ---
 
 <Layout title={title} description={description}>
@@ -22,7 +27,7 @@ const tableOfContents = [
     <section class="relative h-[400px] flex items-center justify-center overflow-hidden">
       <div class="absolute inset-0 z-0">
         <Image
-          src="/images/referencement-naturel-seo-lille.webp"
+          src={heroImage}
           alt="Expert en référencement naturel"
           width={1920}
           height={400}
@@ -33,10 +38,10 @@ const tableOfContents = [
       
       <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h1 class="text-4xl font-extrabold text-white sm:text-5xl">
-          Référencement Naturel (SEO)
+          {heroTitle}
         </h1>
         <p class="mt-4 text-xl text-gray-200 max-w-3xl mx-auto">
-          Améliorez durablement votre visibilité sur Google
+          {heroSubtitle}
         </p>
       </div>
     </section>
@@ -232,7 +237,7 @@ const tableOfContents = [
 
               <div class="mt-12 text-center">
                 <a
-                  href="#contact"
+                  href="/#contact"
                   class="inline-flex items-center px-8 py-4 border border-transparent text-lg font-medium rounded-md text-white bg-primary-600 hover:bg-primary-700 transition-colors duration-300"
                 >
                   Booster votre référencement
