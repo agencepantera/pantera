@@ -1,0 +1,218 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const title = "Notre Agence | Agence Web Wattrelos - Pantera Agency";
+const description = "Découvrez Pantera Agency, votre partenaire digital de confiance à Wattrelos. Experts en création de sites web et solutions digitales sur mesure pour les entreprises locales.";
+---
+
+<Layout title={title} description={description}>
+  <main class="pt-32 pb-16">
+    <div class="container mx-auto px-4">
+      <section class="max-w-4xl mx-auto mb-16">
+        <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-8 text-center">Notre Agence</h1>
+        <p class="text-xl text-gray-700 mb-12 leading-relaxed">
+          Dans le paysage numérique en constante évolution, Wattrelos se positionne comme un terrain fertile pour les entreprises cherchant à développer leur présence en ligne. Chez Pantera Agency, nous comprenons l'importance d'une stratégie web solide pour prospérer dans cet environnement compétitif. Notre expertise en création de sites internet et en solutions digitales sur mesure permet aux entreprises locales de se démarquer et d'atteindre leurs objectifs commerciaux.
+        </p>
+      </section>
+
+      <section class="bg-gradient-to-br from-primary-50 to-white rounded-3xl p-8 md:p-12 mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-8">L'essor du digital à Wattrelos : une opportunité pour votre entreprise</h2>
+        <div class="space-y-6">
+          <p class="text-gray-700 leading-relaxed">
+            Wattrelos, ville dynamique du Nord, connaît une transformation numérique rapide. Selon les données de l'INSEE, en 2023, plus de 80% des foyers wattrelosiens disposent d'un accès internet, illustrant l'importance croissante du web dans la vie quotidienne et professionnelle. Cette tendance offre un terreau propice aux entreprises locales pour développer leur visibilité en ligne.
+          </p>
+          <p class="text-gray-700 leading-relaxed">
+            Notre agence web à Wattrelos se positionne comme un partenaire de choix pour accompagner cette transition. Nous concevons des sites internet professionnels qui répondent aux besoins spécifiques de chaque client.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8 mt-12">
+          <div class="bg-white rounded-xl p-6 shadow-sm">
+            <h3 class="text-xl font-semibold text-gray-900 mb-4">Principaux avantages</h3>
+            <ul class="space-y-3">
+              <li class="flex items-center text-gray-700">
+                <svg class="w-5 h-5 text-primary-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Augmentation de la visibilité locale et régionale
+              </li>
+              <li class="flex items-center text-gray-700">
+                <svg class="w-5 h-5 text-primary-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Amélioration de la relation client
+              </li>
+              <li class="flex items-center text-gray-700">
+                <svg class="w-5 h-5 text-primary-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Développement des ventes
+              </li>
+              <li class="flex items-center text-gray-700">
+                <svg class="w-5 h-5 text-primary-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Renforcement de l'image de marque
+              </li>
+            </ul>
+          </div>
+          <div class="bg-white rounded-xl p-6 shadow-sm">
+            <h3 class="text-xl font-semibold text-gray-900 mb-4">Notre vision</h3>
+            <p class="text-gray-700 leading-relaxed">
+              Comme visionnaires du digital, nous anticipons les tendances et intégrons les technologies les plus récentes dans nos créations. Notre objectif est de vous offrir une longueur d'avance sur vos concurrents.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-8">Création de site internet Wattrelos : notre approche sur mesure</h2>
+        <p class="text-gray-700 mb-8 leading-relaxed">
+          La création d'un site internet n'est pas un processus uniforme. Chaque projet que nous entreprenons est unique, reflétant l'identité et les objectifs spécifiques de votre entreprise. Notre méthode de travail s'articule autour de plusieurs étapes clés.
+        </p>
+
+        <div class="grid md:grid-cols-3 gap-6 mb-12">
+          {[
+            {
+              title: "Analyse & Stratégie",
+              items: ["Analyse des besoins", "Étude de marché", "Définition des objectifs"]
+            },
+            {
+              title: "Conception & Design",
+              items: ["Architecture intuitive", "Design personnalisé", "Expérience utilisateur"]
+            },
+            {
+              title: "Développement & Tests",
+              items: ["Développement robuste", "Optimisation SEO", "Tests rigoureux"]
+            }
+          ].map(({ title, items }) => (
+            <div class="bg-white rounded-xl p-6 shadow-sm">
+              <h3 class="text-xl font-semibold text-gray-900 mb-4">{title}</h3>
+              <ul class="space-y-2">
+                {items.map(item => (
+                  <li class="flex items-center text-gray-700">
+                    <svg class="w-4 h-4 text-primary-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+
+        <div class="bg-gray-50 rounded-3xl p-8 md:p-12">
+          <h3 class="text-2xl font-semibold text-gray-900 mb-6">Caractéristiques techniques de nos sites</h3>
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              {
+                title: "Responsive",
+                description: "S'adapte à tous les appareils"
+              },
+              {
+                title: "Performance",
+                description: "Temps de chargement optimisé"
+              },
+              {
+                title: "Sécurité",
+                description: "Protection contre les cybermenaces"
+              },
+              {
+                title: "RGPD",
+                description: "Conformité aux normes"
+              },
+              {
+                title: "Évolutif",
+                description: "Facilement modifiable"
+              },
+              {
+                title: "Interface",
+                description: "Navigation intuitive"
+              }
+            ].map(({ title, description }) => (
+              <div class="bg-white rounded-lg p-6 shadow-sm">
+                <h4 class="text-lg font-semibold text-gray-900 mb-2">{title}</h4>
+                <p class="text-gray-600">{description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-8">Solutions digitales innovantes</h2>
+        <p class="text-gray-700 mb-8 leading-relaxed">
+          Au-delà de la simple création de sites internet, notre agence propose une gamme complète de solutions digitales pour maximiser votre présence en ligne. Nous sommes convaincus que le succès dans l'ère numérique repose sur une stratégie globale et cohérente.
+        </p>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+          {[
+            {
+              title: "Référencement SEO",
+              description: "Optimisation pour les moteurs de recherche"
+            },
+            {
+              title: "Marketing de contenu",
+              description: "Création de contenus engageants"
+            },
+            {
+              title: "Réseaux sociaux",
+              description: "Gestion et stratégie sociale"
+            },
+            {
+              title: "E-commerce",
+              description: "Solutions de vente en ligne"
+            },
+            {
+              title: "Applications web",
+              description: "Développement sur mesure"
+            },
+            {
+              title: "Support technique",
+              description: "Maintenance et assistance"
+            }
+          ].map(({ title, description }) => (
+            <div class="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+              <h3 class="text-xl font-semibold text-gray-900 mb-3">{title}</h3>
+              <p class="text-gray-600">{description}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section class="mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-8">Votre Agence Web dans la Métropole Lilloise</h2>
+        <div class="space-y-6">
+          <p class="text-gray-700 leading-relaxed">
+            Basée à Wattrelos, Pantera Agency rayonne sur toute la métropole lilloise. Notre équipe d'experts accompagne les entreprises de Lille, Roubaix, Tourcoing, Villeneuve d'Ascq et des communes environnantes dans leur transformation digitale.
+          </p>
+          <p class="text-gray-700 leading-relaxed">
+            Notre connaissance approfondie du tissu économique local nous permet de proposer des solutions adaptées aux enjeux des entreprises de la région. Proximité, réactivité et expertise sont les piliers de notre approche.
+          </p>
+          <div class="text-center mt-8">
+            <a href="/contact" class="inline-flex items-center px-8 py-4 border border-transparent rounded-lg shadow-sm text-lg font-medium text-white bg-primary-600 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500 transition-colors duration-300">
+              Contactez-nous
+              <svg class="ml-2 -mr-1 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-gradient-to-br from-primary-600 to-primary-800 rounded-3xl p-8 md:p-12 text-white text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">Prêt à donner un nouvel élan à votre présence en ligne ?</h2>
+        <p class="text-xl mb-8 opacity-90">
+          N'attendez plus pour transformer votre vision en réalité digitale. Contactez-nous dès aujourd'hui pour discuter de votre projet.
+        </p>
+        <a href="/contact" class="inline-flex items-center px-8 py-4 border border-white rounded-lg text-lg font-medium text-white hover:bg-white hover:text-primary-700 transition-colors duration-300">
+          Démarrer votre projet
+          <svg class="ml-2 -mr-1 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+          </svg>
+        </a>
+      </section>
+    </div>
+  </main>
+</Layout>
